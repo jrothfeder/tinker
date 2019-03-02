@@ -30,10 +30,10 @@ void loop()
             // cross-fade the two colours.
            for(int i = 0; i < 255; i += 1) 
            {
-                   rgbColour[decColour] -= 1;
-                   rgbColour[incColour] += 1;
+                  rgbColour[decColour] -= 1;
+                  rgbColour[incColour] += 1;
 
-                   setColourRgb(rgbColour[0], rgbColour[1], rgbColour[2]);
+                  setColourRgb(rgbColour[0], rgbColour[1], rgbColour[2]);
                   FastLED.show();
                   FastLED.delay(100);
            }
