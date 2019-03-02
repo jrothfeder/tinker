@@ -1,3 +1,4 @@
+// Based on the sketch from https://davidbyres.com/2018/11/12/3d-printed-art/
 #include <FastLED.h>
 
 #define LED_PIN     3
