@@ -15,7 +15,6 @@ void setup()
 
 void loop()
 {
-<<<<<<< HEAD
   unsigned int rgbColour[3];
 
   // Start off with red.
@@ -39,36 +38,10 @@ void loop()
       FastLED.delay(100);
     }
   }
-=======
-     unsigned int rgbColour[3];
-
-     // Start off with red.
-     rgbColour[0] = 255;
-     rgbColour[1] = 0;
-     rgbColour[2] = 0;
-
-     // Choose the colours to increment and decrement.
-     for (int decColour = 0; decColour < 3; decColour += 1) 
-     {
-            int incColour = decColour == 2 ? 0 : decColour + 1;
-
-            // cross-fade the two colours.
-           for(int i = 0; i < 255; i += 1) 
-           {
-                  rgbColour[decColour] -= 1;
-                  rgbColour[incColour] += 1;
-
-                  setColourRgb(rgbColour[0], rgbColour[1], rgbColour[2]);
-                  FastLED.show();
-                  FastLED.delay(100);
-           }
-     }
->>>>>>> 934184316d6ef3ae38a254174dd4e898c0fff3ba
 }
 
 void setColourRgb(unsigned int red, unsigned int green, unsigned int blue)
 {
-<<<<<<< HEAD
   leds[0].r = red;
   leds[0].g = green;
   leds[0].b = blue;
@@ -81,17 +54,4 @@ void setColourRgb(unsigned int red, unsigned int green, unsigned int blue)
   leds[2].r = green;
   leds[2].g = blue;
   leds[2].b = red;
-=======
-        leds[0].r = red;
-        leds[0].g = green;
-        leds[0].b = blue;
-
-        leds[1].r = blue;
-        leds[1].g = red;
-        leds[1].b = green;
-
-        leds[2].r = green;
-        leds[2].g = blue;
-        leds[2].b = red;
->>>>>>> 934184316d6ef3ae38a254174dd4e898c0fff3ba
 }
