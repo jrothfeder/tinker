@@ -50,7 +50,6 @@ void setColourRgb(unsigned int red, unsigned int green, unsigned int blue)
         leds[1].g = red;
         leds[1].b = green;
 
-        
         leds[2].r = green;
         leds[2].g = blue;
         leds[2].b = red;
