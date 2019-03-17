@@ -1,6 +1,6 @@
 #include <FastLED.h>
 
-#define LED_PIN     3
+#define LED_PIN     13
 #define NUM_LEDS    3
 #define BRIGHTNESS  255
 #define LED_TYPE    NEOPIXEL
